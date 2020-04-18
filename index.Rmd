@@ -13,14 +13,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Fecha de entrega y entregables
 **30 de abril de 2020** 
 
-Cuando termine el laboratorio, envíele al profesor por correo electrónico la dirección del repositorio de GitHub resultante (ej. https://github.com/mfvargas/notas-investigacion-reproducible).
+Cuando termine el laboratorio, envíele al profesor por correo electrónico la dirección de la página web resultante (ej. https://mfvargas.github.io/laboratorio-02-r-graficacion/).
 
 ## Trabajo previo
 Se recomienda leer el material preparado por el profesor y consultar los recursos listados en [Lección 04: El lenguaje de programación R - Introducción](https://geoprocesamiento-2020i.github.io/leccion-04-r-introduccion/).
 
 ### Siga estos pasos para descargar este documento en su computadora:
-1. Bifurque (_fork_) el repositorio [https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion](https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion) a su cuenta en GitHub.
-2. En RStudio, clone el repositorio de su cuenta con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. ).
+1. Bifurque (_fork_) el repositorio [https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion](https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion) a su cuenta personal en GitHub.
+2. En el apartado _Settings_ de su repositorio, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de dirección web resultante (ej. https://mfvargas.github.io/laboratorio-02-r-graficacion/).
+3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/mfvargas/laboratorio-02-r-graficacion.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
+
 
 ## Objetivos
 Al finalizar este laboratorio, el estudiante será capaz de:
