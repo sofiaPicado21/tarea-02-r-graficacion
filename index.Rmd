@@ -1,5 +1,5 @@
 ---
-title: "GF-0604 Procesamiento de datos geográficos<br>Laboratorio 02: El lenguaje R - Graficación"
+title: "GF-0604 Procesamiento de datos geográficos<br>Laboratorio 02: R - Graficación"
 author: "Manuel Vargas"
 date: "2020-04-20"
 output: 
