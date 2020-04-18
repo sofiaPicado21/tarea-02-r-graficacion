@@ -1,0 +1,29 @@
+---
+title: "GF-0604 Procesamiento de datos geográficos<br>Laboratorio 02: El lenguaje R - Graficación"
+author: "Manuel Vargas"
+date: "2020-04-20"
+output: 
+  html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Fecha de entrega y entregables
+**30 de abril de 2020** 
+
+Cuando termine el laboratorio, envíele al profesor por corre electrónico la dirección del repositorio de GitHub resultante (ej. "https://github.com/mfvargas/notas-investigacion-reproducible").
+
+## Trabajo previo
+Se recomienda, además de leer el material preparado por el profesor y consultar las fuentes listadas en este.
+
+## Objetivos
+Al finalizar este laboratorio, el estudiante será capaz de:
+
+1. 
+2. 
+
+
+## Desarrollo
+1. 
