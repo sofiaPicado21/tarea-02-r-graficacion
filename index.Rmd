@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Fecha de entrega y entregables
 **30 de abril de 2020** 
 
-Cuando termine el laboratorio, envíele al profesor por corre electrónico la dirección del repositorio de GitHub resultante (ej. "https://github.com/mfvargas/notas-investigacion-reproducible").
+Cuando termine el laboratorio, envíele al profesor por correo electrónico la dirección del repositorio de GitHub resultante (ej. https://github.com/mfvargas/notas-investigacion-reproducible).
 
 ## Trabajo previo
 Se recomienda leer el material preparado por el profesor y consultar los recursos listados en [Lección 04: El lenguaje de programación R - Introducción](https://geoprocesamiento-2020i.github.io/leccion-04-r-introduccion/).
