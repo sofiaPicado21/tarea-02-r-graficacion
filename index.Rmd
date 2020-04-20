@@ -36,7 +36,7 @@ Ejecute los siguientes pasos para bifurcar a su cuenta en GitHub el repositorio 
 1. Bifurque (_fork_) el repositorio [https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion](https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion) a su cuenta personal en GitHub.
 2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://usuario.github.io/laboratorio-02-r-graficacion-basica/).
 3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/usuario/laboratorio-02-r-graficacion-basica.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
-4. Modifique el documento en R Studio.
+4. Abra y modifique el documento en R Studio.
 5. Cada vez que desee actualizar su documento en GitHub y GitHub Pages:
 - Presione el botón _Knit_ en RStudio para generar el documento correspondiente en la sintaxis HTML.
 - Suba a su repositorio en GitHub, los archivos _index.Rmd_ e _index.html_.
