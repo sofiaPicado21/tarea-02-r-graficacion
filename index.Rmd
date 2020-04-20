@@ -16,29 +16,77 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Descripción general
-En este laboratorio, el estudiante
+En este laboratorio, aplicará varios comandos de graficación en el lenguaje [R](https://www.r-project.org/). Además, aprenderá a bifurcar y clonar repositorios del protocolo [Git](https://git-scm.com/) en la plataforma [GitHub](https://github.com/), para editarlos en su estación de trabajo mediante [RStudio](https://rstudio.com/). El resultado final será un documento en la sintaxis [R Markdown](https://rmarkdown.rstudio.com/) publicado en [GitHub Pages](https://pages.github.com/).
 
 ## Fecha de entrega y entregables
-La fecha límite de entrega de este laboratorio es el **30 de abril de 2020**. Debe enviarle al profesor por correo electrónico la dirección de la página web resultante (ej. https://mfvargas.github.io/laboratorio-02-r-graficacion-basica/).
+La fecha límite de entrega de este laboratorio es el **30 de abril de 2020**. Debe enviarle al profesor por correo electrónico la dirección del sitio en GitHub Pages resultante (ej. https://usuario.github.io/laboratorio-02-r-graficacion-basica/).
 
 ## Objetivos
-Al finalizar este laboratorio, el estudiante será capaz de:
-
-1. Bifurcar un repositorio en GitHub.
-2. Clonar un repositorio mediante el protocolo Git y la interfaz de RStudio.
-3. 
+1. Aprender a bifurcar un repositorio en GitHub.
+2. Aprender a clonar un repositorio mediante el protocolo Git y la interfaz de RStudio.
+3. Aprender a editar un documento en R Markdown, incluyendo código en el lenguaje R.
+4. Aplicar comandos de graficación de R.
 
 ## Trabajo previo
 Se recomienda leer el material preparado por el profesor y consultar los recursos listados en [Lección 04: El lenguaje de programación R - Introducción](https://geoprocesamiento-2020i.github.io/leccion-04-r-introduccion/).
 
 ## Bifuración y clonación de este documento
-Ejecute los siguientes pasos para bifurcar a su cuenta en GitHub el repositorio que contiene este documento y posteriormente clonarlo a su computadora:
+Ejecute los siguientes pasos para bifurcar a su cuenta en GitHub el repositorio que contiene este documento y posteriormente clonarlo a su computadora para editarlo con RStudio:
 
 1. Bifurque (_fork_) el repositorio [https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion](https://github.com/geoprocesamiento-2020i/laboratorio-02-r-graficacion) a su cuenta personal en GitHub.
-2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://mfvargas.github.io/laboratorio-02-r-graficacion-basica/).
-3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/mfvargas/laboratorio-02-r-graficacion-basica.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
+2. En el apartado _Settings_ del repositorio bifurcado a su cuenta, busque la sección _GitHub Pages_ y habilítela al seleccionar _master branch_ como fuente. Tome nota de la dirección web resultante (ej. https://usuario.github.io/laboratorio-02-r-graficacion-basica/).
+3. En RStudio, clone el repositorio de su cuenta personal con la opción de menú _File - New Project - Version Control - Git_. En _Repository URL_ escriba la dirección de su repositorio (ej. https://github.com/usuario/laboratorio-02-r-graficacion-basica.git). Puede obtener esta dirección con el botón _Clone or download_, en la página principal del mismo repositorio.
+4. Modifique el documento en R Studio.
+5. Cada vez que desee actualizar su documento en GitHub y GitHub Pages:
+- Presione el botón _Knit_ en RStudio para generar el documento correspondiente en la sintaxis HTML.
+- Suba a su repositorio en GitHub, los archivos _index.Rmd_ e _index.html_.
 
 ## Desarrollo
-1. 
+1. (10%) Mediante la función ```read.csv()```, cargue en un data frame el archivo CSV con datos de casos de Covid-19 ubicado en [https://raw.githubusercontent.com/geoprocesamiento-2020i/datos/master/covid19/casos/ca/ca-covid19.csv](https://raw.githubusercontent.com/geoprocesamiento-2020i/datos/master/covid19/casos/ca/ca-covid19.csv). Luego, despliéguelo mediante la función ```print()```.
 
-## Actualización del repositorio en GitHub y la página en GitHub Pages
+```{r}
+# Importación de datos de casos recuperados, fallecidos, activos y confirmados de Covid-19 en los países de Centroamérica
+ca_covid19 <- read.csv(file='https://raw.githubusercontent.com/geoprocesamiento-2020i/datos/master/covid19/casos/ca/ca-covid19.csv')
+
+# Despliegue de los datos
+print(ca_covid19)
+```
+
+2. (10%) Genere un resumen de los datos con la función  ```summary() ```.
+
+```{r}
+
+```
+
+3. (10%) Con la función ```barplot()```, genere un gráfico de barras de los casos confirmados.
+
+```{r}
+
+```
+
+4. (10%) Con la función  ```order()```, ordene el data frame por cantidad de casos confirmados y genere de nuevo el gráfico.
+
+```{r}
+
+```
+
+5. (10%) Incluya en el gráfico los siguientes componentes:
+- Nombres de los países en el eje correspondiente.
+- Etiquetas en ambos ejes (x, y).
+- Titulo del gráfico.
+
+```{r}
+
+```
+
+6. Genere gráficos similares al del paso anterior para:
+- (25%) Casos activos.
+- (25%) Casos fallecidos.
+
+```{r}
+
+```
+
+```{r}
+
+```
