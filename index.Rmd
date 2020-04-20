@@ -42,6 +42,8 @@ Ejecute los siguientes pasos para bifurcar a su cuenta en GitHub el repositorio 
 - Suba a su repositorio en GitHub, los archivos _index.Rmd_ e _index.html_.
 
 ## Desarrollo
+Realice los siguientes ejercicios de graficación en R (el valor porcentual de cada uno se muestra entre paréntesis).
+
 1. (10%) Mediante la función ```read.csv()```, cargue en un data frame el archivo CSV con datos de casos de Covid-19 ubicado en [https://raw.githubusercontent.com/geoprocesamiento-2020i/datos/master/covid19/casos/ca/ca-covid19.csv](https://raw.githubusercontent.com/geoprocesamiento-2020i/datos/master/covid19/casos/ca/ca-covid19.csv). Luego, despliéguelo mediante la función ```print()```.
 
 ```{r}
