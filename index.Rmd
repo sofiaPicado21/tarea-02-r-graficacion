@@ -1,6 +1,6 @@
 ---
 title: "PF-0953 Programación geoespacial en R<br>Tarea 02: R - Graficación"
-author: "Manuel Vargas"
+author: "Sofía Picado Valverde"
 date: "2020-09-16"
 output:
   html_document:
