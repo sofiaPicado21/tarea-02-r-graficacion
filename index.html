@@ -1593,8 +1593,25 @@ ca_covid19</code></pre>
 ## 7  SLV        792       19450    6846     27088
 ## 8  DOM       1998       78387   24418    104803</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li><p>(10%) Genere un resumen de los datos con la función <code>summary()</code>.</p></li>
-<li><p>Genere gráficos de barras de los casos positivos (20%), recuperados (20%), activos (20%) y fallecidos (20%).</p></li>
+<li>(10%) Genere un resumen de los datos con la función <code>summary()</code>.</li>
+</ol>
+<pre class="r"><code>summary(ca_covid19)</code></pre>
+<pre><code>##      pais             fallecidos      recuperados       activos     
+##  Length:8           Min.   :  19.0   Min.   :  540   Min.   :  150  
+##  Class :character   1st Qu.: 510.8   1st Qu.:14761   1st Qu.: 5370  
+##  Mode  :character   Median :1395.0   Median :20493   Median :16068  
+##                     Mean   :1353.8   Mean   :36094   Mean   :18667  
+##                     3rd Qu.:2108.5   3rd Qu.:72683   3rd Qu.:27929  
+##                     Max.   :2984.0   Max.   :78387   Max.   :48046  
+##    positivos     
+##  Min.   :  1501  
+##  1st Qu.: 21285  
+##  Median : 63379  
+##  Mean   : 56137  
+##  3rd Qu.: 87699  
+##  Max.   :104803</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Genere gráficos de barras de los casos positivos (20%), recuperados (20%), activos (20%) y fallecidos (20%).</li>
 </ol>
 <p>Las barras deben estar ordenadas de mayor (a la izquierda o arriba) a menor (a la derecha o abajo) cantidad de casos. Incluya en el gráfico los siguientes componentes:</p>
 <ul>
