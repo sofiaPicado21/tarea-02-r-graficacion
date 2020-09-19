@@ -74,23 +74,51 @@ Las barras deben estar ordenadas de mayor (a la izquierda o arriba) a menor (a l
 - Cantidad de casos en cada barra.
 
 ```{r}
+library(ggplot2)
+ggplot(ca_covid19, aes(x=reorder(pais, -positivos), y=positivos, fill=reorder(pais, -positivos))) +
+  ggtitle("Casos positivos de COVID-19 en Centroamérica y República Dominicana") +
+  xlab("País") +
+  ylab("Casos positivos") +   
+  geom_col() +
+  geom_text(aes(label=positivos), vjust=-0.3, size=3.5)
 
 ```
 
 ```{r}
-
+ggplot(ca_covid19, aes(x=reorder(pais, -fallecidos), y=fallecidos)) +
+  ggtitle("Cantidad fallecidos por COVID-19 en Centroamérica y República Dominicana") +
+  xlab("País") + 
+  ylab("Casos fallecidos") +  
+  geom_col() +
+  geom_text(aes(label=fallecidos), vjust=-0.3, size=3.5)
 ```
 
 ```{r}
-
+ggplot(ca_covid19, aes(x=reorder(pais, -activos), y=activos, fill=reorder(pais, -activos))) +
+  ggtitle("Cantidad de casos activos de COVID-19 en Centroamérica y República Dominicana") +
+  xlab("País") + 
+  ylab("Casos activos") +  
+  geom_col() +
+  geom_text(aes(label=activos), vjust=-0.3, size=3.5)
 ```
 
 ```{r}
-
+ggplot(ca_covid19, aes(x=reorder(pais, -recuperados), y=recuperados, fill=reorder(pais, -recuperados))) +
+  ggtitle("Cantidad de personas recuperadas de COVID-19 en Centroamérica y República Dominicana") +
+  xlab("País") + 
+  ylab("Casos recuperados") +  
+  geom_col() +
+  geom_text(aes(label=activos), vjust=-0.3, size=3.5)
 ```
 
 4. (10% - OPCIONAL) Genere un solo gráfico de barras que presente los cuatros tipos de casos, ya sea en barras apiladas o agrupadas.
 
 ```{r}
+ggplot(ca_covid19, aes(x=pais, y=positivos, fill=recuperados)) +
+  geom_bar(stat="identity")
+
+  
+  
+  
 
 ```
